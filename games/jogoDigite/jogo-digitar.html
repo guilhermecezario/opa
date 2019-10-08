@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Digite rapido</title>
+  <link rel="stylesheet" href="./css/jogo-digite.css">
+</head>
+<body onload="iniciarPagina()">
+  <nav>
+    <ul>
+      <li><a href="../../index.html">Início</a></li>
+      <li><a href="../../jogos.html">Jogos</a></li>
+      <li><a href="../../quem-somos.html">Quem Somos</a></li>
+    </ul>
+    <img src="../../img/etec.png" id="img-menu">
+</nav>
+  <div class="contentjogo">
+    <div class="contentInfo">
+      <div class="contentDigitar">
+        <div class="font-weight">Frase:</div>
+        <div id="digitar" class="digitar"></div>
+      </div>
+      <div class="contentNivel">
+        <div class="font-weight">Nivel:</div>
+        <div id="nivel" class="nivel"></div>
+      </div>
+    </div>
+    <div class="contentInput">
+      <input type="text" id="input" class="input">
+    </div>
+    <div class="contentCrono">
+      <div>Tempo:</div>
+      <div id="cronometro">
+        <div id="seg"></div>
+        <div id="cen"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contentMensagem" class="contentMensagem">
+    <div class="blockMensagem">
+      <p id="mensagem" class="mensagem">Partiu para o nivel 3, agora vc tem 30 segundos para resolver</p>
+      <button id="button" class="buttonMensagem" onclick="fecharMensagem()">tentar novamente</button>
+    </div>
+  </div>
+  <script src="./js/jquery-3.4.1.js"></script>
+  <script src="./js/script.js">
+  </script>
+</body>
+</html>

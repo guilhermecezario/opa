@@ -1,0 +1,86 @@
+@font-face {
+	font-family: 'Nunito Sans Light';
+	src: url("../../fonts/NunitoSans-Light.ttf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	font-family: 'Nunito Sans Light', sans-serif;
+	font-size: 1.50em;
+}
+
+
+/*Configuração da tela para Digitar nome e dar play*/
+div#pagina_inicial table {
+	width: 70%;
+	margin-top: 13%;
+}
+
+div#pagina_inicial table td {
+	text-align: center;
+}
+
+td.titulo {
+	font-size: 3em;
+}
+
+input {
+	text-align: center;
+	padding: 10px;
+	font-size: 1rem;
+}
+
+
+/*Configuração do Jogo*/
+div#palco_jogo {
+	display: none;
+	margin-top: 50px;
+	text-align: center;
+}
+
+div#palco_jogo td div.jogada {
+	width: 150px;
+	height: 150px;
+}
+
+
+/*Botões links ao final da página*/
+a#jogos-btn {
+	display: inline-block;
+	margin-top: 1%;
+	text-decoration: none;
+	border: 1px solid #1ED107;
+	padding: 20px 40px;
+	border-radius: 5px;
+	background-color: #1ED107;
+	color: white;
+	font-size: .8em;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+a#principal-btn {
+	display: inline-block;
+	margin-top: 1%;
+	text-decoration: none;
+	border: 1px solid #FF2E42;
+	padding: 20px 40px;
+	border-radius: 5px;
+	background-color: #FF2E42;
+	color: white;
+	font-size: .8em;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+a#principal-btn:hover {
+	background-color: #C42333;
+	border-color: #C42333;
+}
+
+a#jogos-btn:hover {
+	text-decoration: underline;
+}

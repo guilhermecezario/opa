@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Sacramento';
+    src: url("../fonts/Sacramento-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Nunito Sans Light';
+    src: url("../fonts/NunitoSans-Light.ttf");
+}
+
+/*Configurações gerais da página*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(50deg, rgba(56, 70, 197) 0%, rgba(255, 46, 66) 100%);
+}
+
+/*Menu horizontal com links e logo a direita*/
+nav {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    transition: .5s;
+}
+
+nav ul {
+    list-style: none;
+    text-align: left;
+}
+
+nav ul li:first-child {
+    margin-left: 7%;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.35em;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 15px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+img#img-menu {
+    width: 7%;
+    margin-top: -50px;
+    float: right;
+    margin-right: 7%;
+}
+
+/* Essa classe será ativada pelo JS do arquivo main.js */
+nav.alterar-menu {
+    background-color: white;
+    box-shadow: 0px 1px 10px #808080;
+}
+
+nav.alterar-menu ul li a {
+    color: #FF2E42;
+}
+
+/*Seção com botão de link para os jogos*/
+section#jogos {
+    text-align: center;
+    margin-bottom: 5%;
+    padding-top: 3%;
+    /*Usando margim o menu também descia. Foi só mudar para padding que o espaçamento entre os blocos de jogos e menu funcionou*/
+}
+
+section#jogos div.bloco-jogo {
+    margin-top: 5%;
+    display: inline-block;
+    background-color: white;
+    color: #FF2E42;
+    border-radius: 10px;
+    width: 35%;
+    height: 550px;
+    font-family: 'Sacramento', cursive;
+}
+
+div.bloco-jogo h2{
+    font-size: 4em;
+}
+
+/*retângulo do jogo da forca*/
+div#forca {
+    margin-right: 20px;
+    background: url('../img/jogo-forca.png') no-repeat 50% 80px;
+    background-size: 75%;
+}
+
+/*retângulo do jogo da velha*/
+div#velha {
+    margin-left: 20px;
+    background: url('../img/jogo-velha.png') no-repeat 50% 80px;
+    background-size: 75%;
+}
+
+div#digito {
+    margin-left: 20px;
+    background: url('../img/teclado.png') no-repeat 50% 40px;
+    background-size: 85%;
+}
+
+/*Botão dos jogos*/
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #FF2E42;
+    padding: 20px 40px;
+    border-radius: 5px;
+    background-color: #FF2E42;
+    color: white;
+    font-size: 1.80em;
+    font-family: 'Nunito Sans Light', sans-serif;
+    margin-top: 75%; 
+}
+
+.btn:hover {
+    background-color: #C42333;
+    border-color: #C42333;
+    text-decoration: underline;
+}

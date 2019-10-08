@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Sacramento';
+    src: url("../fonts/Sacramento-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Nunito Sans Light';
+    src: url("../fonts/NunitoSans-Light.ttf");
+}
+
+/*Configurações gerais da página*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(50deg, rgba(56, 70, 197) 0%, rgba(255, 46, 66) 100%);
+}
+
+/*Menu horizontal com links e logo a direita*/
+nav {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    transition: .5s;
+}
+
+nav ul {
+    list-style: none;
+    text-align: left;
+}
+
+nav ul li:first-child {
+    margin-left: 7%;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.35em;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 15px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+img#img-menu {
+    width: 7%;
+    margin-top: -50px;
+    float: right;
+    margin-right: 7%;
+}
+
+/* Essa classe será ativada pelo JS do arquivo main.js */
+nav.alterar-menu {
+    background-color: white;
+    box-shadow: 0px 1px 10px #808080;
+}
+
+nav.alterar-menu ul li a {
+    color: #FF2E42;
+}
+
+/* Formatação do bloco contendo as duas divs */
+section {
+    padding-top: 7%;
+}
+
+/* Formatação da primeira div */
+section {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+div.equipe {
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7%;
+}
+
+figure img.dev {
+    border-radius: 100%;
+    width: 35%;
+    margin: 2%;
+    float: right;
+}
+
+figcaption {
+    text-align: justify;
+    width: 70%;
+    padding: 0px 30px 0px 30px;
+}
+
+figcaption h3 {
+    font-size: 2.5em;
+    font-family: 'Nunito Sans Light', sans-serif;
+    padding-top: 10px;
+    color: #FF2E42;
+}
+
+figcaption p {
+    font-size: 1.8em;
+    font-family: 'Nunito Sans Light', sans-serif;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    color: #606060;
+}
+
+.social-media {
+    display: inline-block;
+}
+
+.social-media a img {
+    margin-top: 55%;
+    padding-right: 10px;
+}
