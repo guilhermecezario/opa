@@ -5,23 +5,35 @@ var arrayDigitar1 = [
   "computacao",
   "internet",
   "tecnologia",
-  ""
+  "tecnico"
 ];
 var arrayDigitar2 = [
-  "informatica",
-  "nivel dois"
+  "informatica para internet",
+  "curso de informatica",
+  "vem para informatica",
+  "tecnico de tecnologia",
+  "vem para a etec"
 ];
 var arrayDigitar3 = [
-  "tres",
-  "nivel tres"
+  "informatica para internet",
+  "curso de informatica",
+  "vem para informatica",
+  "tecnico de tecnologia",
+  "vem para a etec"
 ];
 var arrayDigitar4 = [
-  "quatro",
-  "nivel quatro"
+  "informatica para internet",
+  "curso de informatica",
+  "vem para informatica",
+  "tecnico de tecnologia",
+  "vem para a etec"
 ];
 var arrayDigitar5 = [
-  "cinco",
-  "nivel cinco"
+  "informatica para internet",
+  "curso de informatica",
+  "vem para informatica",
+  "tecnico de tecnologia",
+  "vem para a etec"
 ];
 var digitar = '';
 var nivel = 1;
@@ -39,15 +51,15 @@ function iniciarPagina(){
 }
 function sortearFrase(){
   if(nivel == 1){
-    digitar = arrayDigitar1[Math.floor(Math.random() * 2)];
+    digitar = arrayDigitar1[Math.floor(Math.random() * 5)];
   }else if(nivel == 2){
-    digitar = arrayDigitar2[Math.floor(Math.random() * 2)];
+    digitar = arrayDigitar2[Math.floor(Math.random() * 5)];
   }else if(nivel == 3){
-    digitar = arrayDigitar3[Math.floor(Math.random() * 2)];
+    digitar = arrayDigitar3[Math.floor(Math.random() * 5)];
   }else if(nivel == 4){
-    digitar = arrayDigitar4[Math.floor(Math.random() * 2)];
+    digitar = arrayDigitar4[Math.floor(Math.random() * 5)];
   }else{
-    digitar = arrayDigitar5[Math.floor(Math.random() * 2)];
+    digitar = arrayDigitar5[Math.floor(Math.random() * 5)];
   }
   $('#digitar').text(digitar);
 }
@@ -60,7 +72,7 @@ function cronometro(){
     }
     cen++;
   }else if(seg < 60){
-    if(nivel == 3 && seg == 6){
+    if(nivel == 3 && seg == 5){
       clearInterval(crono);
       passouDoTempo();
     }else if(nivel == 4 && seg == 4){
@@ -107,17 +119,17 @@ function conferir(){
     }else if(nivel == 2){
       nivel++;
       $('#contentMensagem').show();
-      $('#mensagem').text('Partiu para o nivel 3, agora vc tem 30 segundos para resolver');
+      $('#mensagem').text('Partiu para o nivel 3, agora vc tem 5 segundos para resolver');
       $('#button').text('ir');
     }else if(nivel == 3){
       nivel++;
       $('#contentMensagem').show();
-      $('#mensagem').text('Partiu para o nivel 4, agora vc tem 20 segundos para resolver');
+      $('#mensagem').text('Partiu para o nivel 4, agora vc tem 4 segundos para resolver');
       $('#button').text('ir');
     }else if(nivel == 4){
       nivel++;
       $('#contentMensagem').show();
-      $('#mensagem').text('Partiu para o nivel 5, agora vc tem 10 segundos para resolver');
+      $('#mensagem').text('Partiu para o nivel 5, agora vc tem 2 segundos para resolver');
       $('#button').text('ir');
     }else{
       nivel = 1;
@@ -126,7 +138,10 @@ function conferir(){
       $('#button').text('ir');
     }
   }else{
-    alert('opss, você errou a escrita');
+    nivel = 1;
+    $('#contentMensagem').show();
+    $('#mensagem').text('Você errou a frase :(');
+    $('#button').text('tentar novamente');
   }
 }
 function passouDoTempo(){
