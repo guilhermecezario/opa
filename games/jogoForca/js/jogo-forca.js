@@ -179,27 +179,27 @@ function verificarErro(letra) {
 
 	//troca o boneco se ele tiver uma chance a menos
 	if (chances == 5) {
-		document.getElementById('boneco-img').src = "../../img/segunda.png";
+		document.getElementById('boneco-img').src = "imgForca/segunda.png";
 	}
 
 	if (chances == 4) {
-		document.getElementById('boneco-img').src = "../../img/terceira.png";
+		document.getElementById('boneco-img').src = "imgForca/terceira.png";
 	}
 
 	if (chances == 3) {
-		document.getElementById('boneco-img').src = "../../img/quarta.png";
+		document.getElementById('boneco-img').src = "imgForca/quarta.png";
 	}
 
 	if (chances == 2) {
-		document.getElementById('boneco-img').src = "../../img/quinta.png";
+		document.getElementById('boneco-img').src = "imgForca/quinta.png";
 	}
 
 	if (chances == 1) {
-		document.getElementById('boneco-img').src = "../../img/sexta.png";
+		document.getElementById('boneco-img').src = "imgForca/sexta.png";
 	}
 
 	if (chances == 0) {
-		document.getElementById('boneco-img').src = "../../img/setima.png";
+		document.getElementById('boneco-img').src = "imgForca/setima.png";
 	}
 
 }

@@ -75,13 +75,13 @@ $(document).ready(function () {
     var ponto = 0;
 
     if ((rodada % 2) == 1) {
-      icone = 'url("../../img/marcador_1.png")';
+      icone = 'url("imgVelha/marcador_1.png")';
       ponto = -1;
       $('#primeirojogar').hide();
       $('#segundojogar').show();
 
     } else {
-      icone = 'url("../../img/marcador_2.png")';
+      icone = 'url("imgVelha/marcador_2.png")';
       ponto = 1;
       $('#segundojogar').hide();
       $('#primeirojogar').show();

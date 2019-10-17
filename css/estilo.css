@@ -21,30 +21,34 @@
 header#topo {
   background: linear-gradient(50deg, rgba(56, 70, 197, .7) 0%, rgba(255, 46, 66, .8) 100%), url("../img/otavio-fundo-preto.png");
   background-size: cover;
+  background-position: center;
   min-height: 100vh;
-  min-width: 100vh;
+  max-width: 100vw;
   text-align: center;
 }
 
 /*Menu horizontal*/
 nav {
   width: 100%;
+  height: 10vh;
   position: fixed;
   z-index: 1;
   transition: .5s;
+  display: flex;
+  align-items: center;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 nav ul {
   list-style: none;
-  text-align: left;
-}
-
-nav ul li:first-child {
-  margin-left: 7%;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 nav ul li {
-  display: inline;
+  display: inline-block;
 }
 
 nav ul li a {
@@ -61,11 +65,8 @@ nav ul li a:hover {
 }
 
 /* Logo da ETEC. Só é exibido quando o scroll é ativado */
-img#img-menu {
-  width: 7%;
-  margin-top: -50px;
-  float: right;
-  margin-right: 7%;
+nav img#img-menu {
+  width: 10%;
 }
 
 /* Esse menu fica escondido. Ele só é exibido quando o JS percebe que o scroll entrou em ação. Arquivo main.js na pasta js */
@@ -74,7 +75,7 @@ nav.alterar-menu {
   box-shadow: 0px 1px 10px #808080;
 }
 
-nav.alterar-menu ul li a {
+nav.alterar-menu  li a {
   color: #FF2E42;
 }
 
